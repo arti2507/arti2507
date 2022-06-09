@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article} 
+\documentclass[12pt,a4paper]{scrartcl} 
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
 \usepackage{indentfirst}
@@ -6,74 +6,51 @@
 \usepackage{graphicx}
 \usepackage{amsmath}
 \begin{document}
-	\begin{center}
-\section{Введение}
-	\end{center}
-\label{sec:intro}
+	\begin{titlepage}
+		\begin{center}
+			\large
+			МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ
+			
+			Федеральное государственное бюджетное образовательное учреждение высшего образования
+			
+			\textbf{АДЫГЕЙСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ}
+			\vspace{0.25cm}
+			
+			Инженерно-физический факультет
+			
+			Кафедра автоматизированных систем обработки информации и управления
+			\vfill
 
-% Что должно быть во введении
-\begin{enumerate}
- \item Обработка данных в системе 1С:Университет
- \item Порядок внесения данных в ситему 1С
- \item Скриншоты внесения данных
-\end{enumerate}
-
-\newpage
-\begin{center}
-\section{Ход работы}
-\end{center}
-\label{sec:exp}
-\subsection{Порядок внесения данных в систему 1С}
-\begin{flushleft}
-\begin{verbatim}
-Для заполненя ведомости необходимо:
-1. Зайти во вкладку "Управление студенческим составом"
-2. Выбрать Факультет, форму обучения, направление, курс 1–4.
-3. В открывшемся окне будет отображен список аттестационных ведомостей.
-   Выбрав нужную ведомость, по предмету и форме оценивания.(Рис.1)
-\end{verbatim}
-\end{flushleft}
-\subsection {Заполнение ведомости}
-\begin{verbatim}
-В открывшемся окне аттестационной ведомости необходимо:
-1. Изменить дату проведения.
-2. Вид работы.
-2. Ещё раз изменяем дату. Единица измерения - надо выбрать часы.
-3. Во вкладке, список обучающихся необходимо:
-   проверить всех студентов по списку. Т.к. списки не всегда совпадают.  
-   Если необходимо внести студента в саисок, нажимаем кнопку 
-   "добавить" или клавишей "insert".
-   Появиться пустая строка для поиска студента из базы 1С,
-   двойным щелчком нажимаем по пустой строке, в конце строки можно увидеть "...".
-   Нажав на три точки, откроеться окно со списком всех студентов,
-   это окно можно открыть горячей клавищей "F4". Далее выбираем нужного студента
-   двойным щелчком мыши добавляем его, затем он будет внесен в список.
-4. Далее выбираем систему оценивания пятибальную или двубальную.
-5. Когда все студенты добавленны или удалены из ведомости,
-   в окне "Отметка" сверяясь с бумажным носителем вносим соответстующие оценки.
-   Когда данные по студентам внесены, переходим в вкладку преподователи.
-   Сверяя с бумажным носителем, добавляем преподователя.
-   Далее необходимо проверить правельность внесенных данных,
-   если все верно, жмем кнопку "Провести и закрыть".
-   
-   
-\end{verbatim}
-\label{sec:exp:code}
-\newpage
-\begin{center}
-\section{Скриншоты внесения даннах}
-\end{center}
-\label{sec:picexample}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8 \textwidth]{D:/Progs/texlive/texmf-local/doc/local/1}
-	\caption{Список аттестационных ведомостей}
-	\label{fig:1}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{D:/Progs/texlive/texmf-local/doc/local/2}
-	\caption{}
-	\label{fig:2}
-\end{figure}
+			\vfill
+			
+			\textsc{Отчет по практике}\\[5mm]
+			
+			{\RGE Обработка данных в системе 1С:Университет
+}
+			\bigskip
+			
+			1 курс, группа 1ИВТ2
+		\end{center}
+		\vfill
+		
+		\newlength{\ML}
+		\settowidth{\ML}{«\underline{\hspace{0.7cm}}» \underline{\hspace{2cm}}}
+		\hfill\begin{minipage}{0.5\textwidth}
+			Выполнил:\\
+			\underline{\hspace{\ML}} А.\,Р.~Романович\\
+			«\underline{\hspace{0.7cm}}» \underline{\hspace{2cm}} 2022 г.
+		\end{minipage}%
+		\bigskip
+		
+		\hfill\begin{minipage}{0.5\textwidth}
+			Руководитель:\\
+			\underline{\hspace{\ML}} С.\,В.~Теплоухов\\
+			«\underline{\hspace{0.7cm}}» \underline{\hspace{2cm}} 2022 г.
+		\end{minipage}%
+		\vfill
+		
+		\begin{center}
+			Майкоп,  2022 г.
+		\end{center}
+	\end{titlepage}
 \end{document}
